@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Salas de conciertos de Madrid</name>
+  <description><![CDATA[Madrid se mueve al ritmo de la música que invade sus calles, el metro y sus salas. Es la ciudad donde disfrutar de un concierto en directo, sea el día que sea, es posible. La oferta es amplia y variada, en más de sus cuarenta salas. ¡Os presentamos una selección de las mejores!]]></description>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Búho Real</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://unbuendiaenmadrid.com/wp-content/uploads/2012/03/Sala_Buho_real_1.jpg" style="width:242px"></div><div dir="ltr"><br>&nbsp;<span style="font-size:10pt">Un ambiente más tranquilo, íntimo y acogedor en la sala <a href="http://www.buhoreal.com/" target="_blank">Búho Rea</a>l, en pleno corazón de Chueca. Hace 19 años, la sala apostó por el formato más sencillo para sus conciertos diarios: el acústico. Por su ambiente, es la preferida de los cantautores ya que pueden cantar a su público viendo su cara y sintiendo protagonizadas por grandes voces como la de  su reacción. Más de cuatro mil actuaciones David de María, Nena Daconte, Pereza, Deluxe, Vega, Belén Arjona o Joan Tena.</span></div>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-3.696620,40.424530,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Taboo</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://www.musicopolis.es/wp-content/uploads/images//20091023124930-1.jpg" style="width:242px"><br>En el corazón de Malasaña, abrió sus puertas en diciembre del 2001 la sala <a href="http://www.taboo-madrid.com" target="_blank">Taboó</a>. Se concibe como sala de conciertos, espectáculos multidisciplinares, colectivo de dj´s y músicos que trasmiten energía y conectan con el público.</div>]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-3.703111,40.425652,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Zanzíbar</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://www.laguiago.com/upload/fotos/directorio/200907/zanzibar_sala_grande.jpg" style="width:242px"></div><div dir="ltr"><br>&nbsp;<span style="font-size:10pt">En pleno centro de Madrid y en una de las zonas más vanguardistas, nos encontramos con <a href="http://www.zanzibarmadrid.com/" target="_blank">Zanzibar</a>, un espacio abierto a la solidaridad, con una oferta cultural y de ocio que merece la pena conocer. Pintado en tonos alegres y cálidos, que recuerdan a los chiringuitos de las playas tropicales y decorado con tapices, instrumentos y máscaras procedentes de los confines más remotos, hay algo en el ambiente del local que invita a regresar. En Zanzibar se disfruta de tendencias musicales lejos de lo convencional que te harán viajar a países exóticos y te acercarán a otras culturas.</span></div>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-3.696454,40.424652,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Caracol</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://www.fiestasnocheviejamadrid.com/imagenes/85_foto1.jpg" style="width:242px"></div><div dir="ltr">La <a href="http://www.salacaracol.com/" target="_blank">Sala Caracol</a> es una de las más emblemáticas con 20 años de historia a sus espaldas. Ha sido la plataforma de lanzamiento de muchos artistas que ahora son referentes en el panorama musical, tanto nacional como internacional: Amaral, Placebo, Estopa, El Canto del Loco… Son pocos los que no han pasado por la Sala Caracol.</div>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-3.700182,40.404133,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Café Jazz Populart</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://blogimgs.only-apartments.com/images/guide/big/1025/populart-madrid.jpg" style="width:242px"><br>&nbsp;<span style="font-size:10pt">El lugar indicado para disfrutar de los buenos músicos de Jazz es el <a href="http://www.populart.es/" target="_blank">Café Populart</a>. Quince años de conciertos en los que han pasado por la sala músicos como Gary Bartz Eddie Henderson, Wallace Roney, entre muchos otros.</span></div><div dir="ltr">Podéis leer una entrevista con su dueño, Javier Pérez, pinchando <a href="http://madridenvivo.wordpress.com/2012/12/03/cafe-jazz-populart-intentamos-dar-calidad-musical/" target="_blank">aquí.</a></div>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-3.699523,40.413734,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>BarCo</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://www.lafactoriadelritmo.com/fact24/sites/default/files/salabarco0.jpg" style="width:242px"></div><div dir="ltr"><a href="http://www.barcobar.com/" target="_blank">BarCo</a> (léase la “o” final como una nota musical) ofrece todos los días actuaciones musicales en riguroso directo y con una acústica muy cuidada. BarCo (léase la “o” final como una nota musical), que ofrece todos los días actuaciones musicales con todas las de la ley, es decir, en riguroso directo y con una acústica muy cuidada gracias a un equipo de sonido profesional manejado por los mejores técnicos.<br>La programación del local, apuesta por promover la música en directo y colabora con la Escuela de Música Creativa, para dar la oportunidad a sus alumnos más aventajados de presentarse ante el público. La sala cuenta con dos plantas ambas con escenario. Arriba hay un piano de media cola, y abajo, en plan “petit comité”, los fines de semana montan la “zona clubbing” del garito. El resto de la semana los conciertos son en la parte de arriba, a partir de las once. </div>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-3.702350,40.423103,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Barracudas</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://www.jukebox-webzine.es/links/salas/img/barracudas.jpg" style="width:242px"><br>Ubicada en el madrileño barrio del Parque de las Avenidas, la sala Barracudas programa conciertos basicamente de rock, aunque en su programacion tienen cabida multitud de estilos. Tanto la plantilla como la directiva esta casi integramente compuesta por musicos asi que el amor por la musica se nota en cada detalle, decoracion, sonido, actitud...</div>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-3.662320,40.436676,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Berlín Café</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://media0.webgarden.es/images/media0:4cdd4feb14d18.jpg/CIMG4479.jpg" style="width:242px"></div><div dir="ltr">El <a href="http://www.cafeberlin.es/" target="_blank">Café  Berlín</a> mantiene un estilo art decó y se convierte en un club acogedor con un punto sofisticado y decorado. Aunque el jazz  ha hecho famoso el Café Berlín durante estos años el Berlín se abre a otros géneros como soul, funk, r&amp;b, black, flamenco, fusión y a sesiones en vivo animadas por djs de renombre.</div>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>-3.707143,40.420307,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe La Palma</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://notedetengas.es/wp-content/uploads/2010/11/sister4.jpg" style="width:242px"></div><div dir="ltr">El <a href="http://www.cafelapalma.com/" target="_blank">Café la Palma</a> es un lugar camaleónico: para un café, para una copa y para escuchar un concierto. Este local, en 18 años, ha conseguido configurarse como un espacio que mezcla diferentes ambientes y los mejores ritmos. Presumen de ser pioneros en el desarrollo del concepto de “primera copa” dentro de circuito de la ciudad y de ofrecer un “ocio enriquecido”.<br>Podéis leer una entrevista a su dueño, Germán Hughes, pinchando <a href="http://madridenvivo.wordpress.com/2012/12/10/cafe-la-palma-una-ciudad-sin-conciertos-es-sin-duda-una-ciudad-gris/" target="_blank">aquí.</a></div>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-3.708057,40.426773,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Costello Cafe &amp; Nite Club</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://lacuchara.es/wp-content/uploads/costello_club.jpg" style="width:242px"></div><div dir="ltr">Costello nace en el año 2005 de la idea de dos hermanos que llevaban trabajando más de 18 años dentro de la música en discográficas, editoriales, agencias pero especialmente en contacto directo con lo más importante los artistas. La vocación de la Costello es que exista un pequeño espacio en Madrid de encuentro de los músicos, ya sea dentro o fuera del escenario, y crear una escena musical para hacer cantera de nuevos talentos.</div>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-3.700773,40.419476,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>El Intruso</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://media-cdn.tripadvisor.com/media/photo-s/02/95/da/ee/filename-california-honeydrops.jpg" style="width:242px"></div><div dir="ltr"><a href="http://www.intrusobar.com/" target="_blank">El Intruso Bar</a> es un club que se sitúa en el corazón de Madrid: Augusto Figueroa, 3 (enfrente del mercado de Fuencarral).<br>Conciertos, eventos, presentaciones y sesiones especiales son la propuesta del Intruso para que puedas disfrutar de la mejor atmósfera en este innovador espacio. Han cumplido un añito y por escenario han pasado artistas de la talla de California Honeydrops, Sulene Fleming &amp; Fire Eaters (UK), Bob Stroger (USA), Gecko Turner, Tail Dragger (USA), Blue Perro...</div>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-3.700300,40.423080,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>El Juglar</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://www.google.es/url?source=imglanding&amp;ct=img&amp;q=http://4.bp.blogspot.com/_CKQ44-0oV0c/S6vBXbxxV5I/AAAAAAAADhg/eEBwR1ppJZQ/s1600/ELkano_Browning_Cream_Concierto_en_el_Juglar,_Madrid_23-03-09_(45).jpg&amp;sa=X&amp;ei=ppbJUKWGOtLJ0AW_l4GQAg&amp;ved=0CAoQ8wc&amp;usg=AFQjCNHiWf5VmYu5cu_7RJwZWMr22VCXmg" style="width:242px"></div><div dir="ltr"><a href="http://www.salajuglar.com" target="_blank">El Juglar</a>, ataviado con un potente escenario este local ofrece la música más variada, los grupos más heterogéneos y el mejor ambiente de Lavapiés.<br>Desde que abriera sus puertas en 1999, han buscado siempre la apertura de ideas de la escena creativa joven y de la calle, por ello, bajo el diseño rockero de los años setenta, se ha escuchado cante jondo, ritmos modernos, sonidos étnicos o las melodías más vanguardistas venidas de dentro y fuera de nuestras fronteras.</div>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>-3.702151,40.409683,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>El Sol</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://www.musicopolis.es/wp-content/uploads/images//20120224073442-20100524121704-sala-el-sol-madrid-by-pablo-lpez.jpg" style="width:242px"></div><div dir="ltr">Desde que <a href="http://www.elsolmad.com/" target="_blank">El Sol</a> abrió sus puertas en 1979, cuna de la movida, ha visto nacer a grupos tan representativos como Nacha Pop, La Unión, Radio Futura o Alaska. En su escenario han tenido lugar, en los últimos años, cientos de conciertos a cargo de formaciones consagradas del pop y rock nacional e internacional pero también de artistas que esperan su confirmación en la industria musical. Templo de la noche madrileña, es un espacio abierto a todo tipo de celebraciones relacionadas con la cultura. </div>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-3.701615,40.418945,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Galileo Galilei</name>
+    <description><![CDATA[<div dir="ltr"><img src="http://api.ning.com/files/MCJAf9PHbulG-n-wzGmfIZHpm5hRB*KB1Mo-0amowZt*yXFsQeOfflIePiqhcB*19q5v1eiThM2xOcvohhyQuHUlCN2*uDSn/IMG_6531.jpg" style="width:242px"></div><div dir="ltr">En pleno centro de Madrid y el estilo de un templo Heleno, la Sala Galileo Galilei es una de las decanas de la ciudad. Se inauguró en octubre de 1985 en el antiguo local del cine Galileo. En sus inicios, con apenas dos o tres conciertos por semana, la sala se convirtió en un lugar de encuentro donde encontrarse con los amigos, charlar… acompañados de buena música.</div>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-3.709828,40.438480,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

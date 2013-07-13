@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='jquery/jquery-1.9.1.min.js'></script>
+<script src='jquery/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='fullcalendar/fullcalendar.min.js'></script>
+<script type="text/javascript" src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js'></script>
+<script src='fullcalendar/moment-range.js'></script>
+<script>
+
+	$(document).ready(function() {
+	
+
+	   Date.prototype.addDays = function(days) {
+       var dat = new Date(this.valueOf())
+       dat.setDate(dat.getDate() + days);
+       return dat;
+   }
+
+   function getDates(startDate, stopDate) {
+      var dateArray = new Array();
+      var currentDate = startDate;
+      while (currentDate <= stopDate) {
+      	var newEvent = { title: "available",
+      		start: currentDate
+      	}
+        dateArray.push(newEvent)
+        currentDate = currentDate.addDays(1);
+      }
+      return dateArray;
+    }
+var startDate = new Date(2013, 9, 1)
+var dateArray = getDates(startDate, startDate.addDays(30));
+debugger;
+// for (i = 0; i < dateArray.length; i ++ ) {
+//     alert (dateArray[i]);
+// }
+
+
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+						month: 9,
+			editable: true,
+			events: dateArray,
+			eventClick: function(calEvent, jsEvent, view) {
+
+				if(calEvent.title === "available"){
+					calEvent.title = "not available";
+					$(this).text("not available");
+				  $(this).css('background', 'red');
+			    $(this).css('border-color', 'red');
+				}
+				else{
+					calEvent.title = "available";
+					$(this).text("available");
+				  $(this).css('background', '#3a87ad');
+			    $(this).css('border-color', '#3a87ad');
+				}
+        // alert('Event: ' + calEvent.title);
+        // alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+        // alert('View: ' + view.name);
+
+    }
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+
+</style>
+</head>
+<body>
+<div id='calendar'></div>
+</body>
+</html>

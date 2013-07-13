@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://themes.alessioatzeni.com/html/chakra/dar./backers.html -->
+<html lang="en-US" class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Meta Tags -->
+
+
+<title>Shortcodes | Chakra | Responsive One Page Template</title>   
+
+<meta name="description" content=""> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="./_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="./_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="./_include/css/supersized.css" rel="stylesheet">
+<link href="./_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="./_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="./_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="./_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="./_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="./_include/css/responsive.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="./_include/css/custom.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="./backers/css" rel="stylesheet" type="text/css">
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="./backers.html#">
+
+<link rel="apple-touch-icon" href="./backers.html#">
+<link rel="apple-touch-icon" sizes="114x114" href="./backers.html#">
+<link rel="apple-touch-icon" sizes="72x72" href="./backers.html#">
+<link rel="apple-touch-icon" sizes="144x144" href="./backers.html#">
+
+<!-- Modernizr -->
+<script type="text/javascript" async="" src="./backers/ga.js"></script><script src="./backers/modernizr.js"></script>
+
+<!-- Analytics -->
+<link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='jquery/jquery-1.9.1.min.js'></script>
+<script src='jquery/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='fullcalendar/fullcalendar.min.js'></script>
+<script type="text/javascript" src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js'></script>
+<script src='fullcalendar/moment-range.js'></script>
+<script>
+
+    $(document).ready(function() {
+    
+
+       Date.prototype.addDays = function(days) {
+       var dat = new Date(this.valueOf())
+       dat.setDate(dat.getDate() + days);
+       return dat;
+   }
+
+   function getDates(startDate, stopDate) {
+      var dateArray = new Array();
+      var currentDate = startDate;
+      while (currentDate <= stopDate) {
+        var newEvent = { title: "available",
+            start: currentDate
+        }
+        dateArray.push(newEvent)
+        currentDate = currentDate.addDays(1);
+      }
+      return dateArray;
+    }
+var startDate = new Date(2013, 9, 1)
+var dateArray = getDates(startDate, startDate.addDays(30));
+debugger;
+// for (i = 0; i < dateArray.length; i ++ ) {
+//     alert (dateArray[i]);
+// }
+
+
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+        
+        $('#calendar').fullCalendar({
+                        month: 9,
+            editable: true,
+            events: dateArray,
+            eventClick: function(calEvent, jsEvent, view) {
+
+                if(calEvent.title === "available"){
+                    calEvent.title = "not available";
+                    $(this).text("not available");
+                  $(this).css('background', 'red');
+                $(this).css('border-color', 'red');
+                }
+                else{
+                    calEvent.title = "available";
+                    $(this).text("available");
+                  $(this).css('background', '#3a87ad');
+                $(this).css('border-color', '#3a87ad');
+                }
+        // alert('Event: ' + calEvent.title);
+        // alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+        // alert('View: ' + view.name);
+
+    }
+        });
+        
+    });
+
+</script>
+
+</head>
+
+
+<body style="display: block;">
+
+<!-- This section is for Splash Screen -->
+<div></div>
+<!-- End of Splash Screen -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-wrapper" style="height: 60px;"><div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="./backers.html#menu-nav"></a>
+        
+        <div id="logo">
+        	<a id="goUp" href="./backers.html#home-slider" title="Chakra | Responsive One Page Template">Chakra Template</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li><a href="./backers.html" class="external">Home</a></li>
+                <li class="current"><a href="./bands.html" class="external">Bands</a></li>
+                <li><a href="./backers.html#about" class="external">Venues</a></li>
+				<!--<li><a href="./index.html#services" class="external">Services</a></li>
+                <li><a href="./blog.html" class="external">Blog</a></li>
+                <li><a href="./index.html#contact" class="external">Contact</a></li>
+                <li><a href="./backers.html">Shortcodes</a></li>-->
+				<li><a class="fancybox-various" href="#inline1">Log In</a></li>
+            </ul>
+        </nav>
+        
+    </div></div>
+</header>
+<!-- End Header -->
+
+<!-- Our Shortcodes Section -->
+
+<!-- End Shortcodes Section -->
+<!-- Our Shortcodes Section -->
+<div id="shortcodes" class="page">
+    <div class="container">
+    
+        <!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Bands</h2>
+                    <h3 class="title-description">Hall of fame.</h3>
+
+                    <div id='calendar'></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        </div>
+    </div>
+        
+
+<!-- Footer -->
+<footer>
+	<p class="credits">©2013 Chakra. <a href="http://themes.alessioatzeni.com/html/chakra/" title="Chakra | Responsive One Page Template">Chakra Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="./backers.html#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+<!-- Js -->
+
+<!-- End Js -->
+
+
+<ul id="supersized" class="quality" style="visibility: visible;"><li class="slide-0 activeslide"><a target="_blank"><img src="./backers/image01.jpg" style="width: 1423px; left: 0px; top: -79.5px; height: 953.4100000000001px;"></a></li><li class="slide-1"><a target="_blank"><img src="./backers/image02.jpg" style="width: 1423px; left: 0px; top: -108px; height: 1010.3299999999999px;"></a></li><li class="slide-2"></li><li class="slide-3 prevslide"><a target="_blank"><img src="./backers/image04.jpg" style="width: 1423px; height: 1081.48px; left: 0px; top: -143.5px;"></a></li></ul></body></html>

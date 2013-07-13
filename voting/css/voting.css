@@ -1,0 +1,71 @@
+html, body {
+	position: fixed;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#mainContainer {
+	position: absolute;
+
+	top: 55px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+}
+
+#venuesContainer {
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 35%;
+}
+
+#venuesScrollContainer {
+	position: absolute;
+
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+
+#bandsContainer {
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+	left: 66%;
+	right: 0;
+}
+
+#bandsContainer .btn {
+	width: 100%;
+
+	text-align: left;
+}
+
+#bandsScrollContainer {
+	position: absolute;
+
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#venuesTable .notAvailable {
+	color: #333;
+	background-color: #bbb;
+}
+
+#venuesTable .bandUnavailable {
+	opacity: 0.2;
+}

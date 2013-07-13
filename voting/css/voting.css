@@ -10,7 +10,7 @@ html, body {
 #mainContainer {
 	position: absolute;
 
-	top: 55px;
+	top: 68px;
 	left: 4px;
 	right: 4px;
 	bottom: 4px;
@@ -24,11 +24,24 @@ html, body {
 	left: 35%;
 	right: 0;
 }
+body#finalPage #venuesContainer {
+	left: 0;
+}
+
+body#finalPage table th:first-child,
+body#finalPage table td:first-child {
+	width: 50px;
+}
+
+body#finalPage table th,
+body#finalPage table td {
+	width: 150px;
+}
 
 #venuesScrollContainer {
 	position: absolute;
 
-	top: 36px;
+	top: 90px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -48,7 +61,7 @@ html, body {
 #bandsScrollContainer {
 	position: absolute;
 
-	top: 36px;
+	top: 42px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -68,7 +81,6 @@ html, body {
 .vote {
 	color: #fff;
 	opacity: 0.3;
-	cursor: pointer;
 
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -76,6 +88,9 @@ html, body {
 	-moz-user-select: moz-none;
 	-ms-user-select: none;
 	user-select: none;
+}
+.vote {
+	cursor: pointer;
 }
 td:hover .vote {
 	opacity: 0.8;
@@ -103,4 +118,9 @@ td:hover .vote {
 
 .button + .button {
 	margin-left: 0px;
+}
+
+.won {
+	color: #fff;
+	background-color: #DE5E60;
 }

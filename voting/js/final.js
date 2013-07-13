@@ -1,7 +1,5 @@
 "use strict";
 
-window.gig.voteCount = 10;
-
 var renderTable = function () {
 	// contains both band and venue data
 	var tableData = {
@@ -25,18 +23,24 @@ var renderTable = function () {
 			venues: []
 		};
 
-		if (window.gig.selectedBand.availability[date]) {
-			newDate.bandAvailable = true;
-		}
 		_.each(window.gig.venues, function (venue) {
 			var newVenue = {};
 
-			if (venue.availability[date]) {
-				newVenue.available = true;
-				newVenue.bands = venue.bands[date];
+			var usedBands = {};
 
-				if (window.gig.selectedBand.availability[date]) {
-					newVenue.votes = window.gig.selectedBand.venueVotes[date][venue.name] || 0;
+			if (venue.availability[date] && Math.random() < 0.85) {
+				newVenue.available = true;
+
+				var bandIndex = Math.floor(Math.random() * window.gig.bands.length);
+				while (_.contains(usedBands, bandIndex)) {
+					bandIndex = Math.floor(Math.random() * window.gig.bands.length);
+				}
+				newVenue.bandName = window.gig.bands[bandIndex].name;
+				usedBands[newVenue.bandName] = true;
+				console.log("band = ", newVenue.bandName);
+
+				if (Math.random() < 0.2) {
+					newVenue.won = true;
 				}
 			}
 
@@ -85,18 +89,5 @@ var renderTable = function () {
 $(document).ready(function () {
 	console.log("start app");
 
-	$('#bandsList').html(Mustache.render($('#bandButtonTemplate').html(), {bands: window.gig.bands})).button();
-
-	$('#bandsList button').click(function () {
-		var $this = $(this);
-		window.gig.selectedBandIndex = $('#bandsList button').index($this);
-		window.gig.selectedBand = window.gig.bands[window.gig.selectedBandIndex];
-
-		$('#bandsList button').removeClass('active').eq(window.gig.selectedBandIndex).addClass('active');
-
-		renderTable();
-
-		// TODO: clip
-		$('#venuesTitle').text('2. Vote for ' + window.gig.selectedBand.name + ' in August');
-	}).first().click();
+	renderTable();
 });

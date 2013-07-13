@@ -84,7 +84,8 @@
 	_.each(bandNames, function (bandName) {
 		var band = {
 			name: bandName,
-			availability: {}
+			availability: {},
+			venueVotes: {}
 		};
 		populateAvailability(band, Math.random() * 0.8);
 
@@ -93,8 +94,18 @@
 		_.each(band.availability, function (available, date) {
 			var possibleVenues = [];
 
+			band.venueVotes[date] = {};
+
 			_.each(window.gig.venues, function (venue) {
+				if (venue.availability[date]) {
+					possibleVenues.push(venue);
+
+					if (possibleVenues.length > 0 && Math.random() < 0.3) {
+						band.venueVotes[date][venue.name] = Math.round(Math.random() * amountPopulated);
+					}
+				}
 			});
+
 		});
 
 		window.gig.bands.push(band);

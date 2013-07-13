@@ -94,12 +94,11 @@
 					</td>
 					{{#venues}}
 						{{#available}}
-						<td class="available">
-							{{#position}}{{position}} / {{/position}}{{bands.total}} bands
+						<td data-venue="{{name}}" class="available">
+							<span class="vote">&#x25B2;</span> <span class="votes">{{votes}}</span> votes
 						{{/available}}
 						{{^available}}
-						<td class="notAvailable">
-							Not Available
+						<td data-venue="{{name}}" class="notAvailable">
 						{{/available}}
 						</td>
 					{{/venues}}
@@ -109,7 +108,7 @@
 		</script>
 	<script type="unknown" id="bandButtonTemplate">
 		{{#bands}}
-		<button class="btn">{{name}}</button>
+		<button class="button myButton">{{name}}</button>
 		{{/bands}}
 	</script>
 </head>
@@ -129,12 +128,14 @@
         	<a id="goUp" href="./backers.html#home-slider" title="Chakra | Responsive One Page Template">Chakra Template</a>
         </div>
         
+		<h3 id="voteCount">10 votes left</h3>
+
         <nav id="menu">
         	<ul id="menu-nav">
             	<li><a href="./backers.html" class="external">Home</a></li>
-                <li class="current"><a href="./bands.html" class="external">Bands</a></li>
+                <li><a href="./bands.html" class="external">Bands</a></li>
                 <li><a href="./backers.html#about" class="external">Venues</a></li>
-                <li><a href="./voting.html" class="external">Voting</a></li>
+                <li class="current"><a href="./voting.html" class="external">Voting</a></li>
 				<!--<li><a href="./index.html#services" class="external">Services</a></li>
                 <li><a href="./blog.html" class="external">Blog</a></li>
                 <li><a href="./index.html#contact" class="external">Contact</a></li>
@@ -159,18 +160,18 @@
             <div class="span12">
                 <div class="title-page">
 					<div id=mainContainer>
-						<div id=venuesContainer>
-							<h2 id=venuesTitle>Venues</h2>
-							<div id=venuesScrollContainer>
-								<table id="venuesTable" class="table table-bordered">
-								</table>
-							</div>
-						</div>
 						<div id=bandsContainer>
-							<h2>Bands</h2>
+							<h3>1. Choose Band</h3>
 							<div id=bandsScrollContainer>
 								<div id=bandsList class="btn-group btn-group-vertical" data-toggle="buttons-radio">
 								</div>
+							</div>
+						</div>
+						<div id=venuesContainer>
+							<h3 id=venuesTitle>2. Vote for </h3>
+							<div id=venuesScrollContainer>
+								<table id="venuesTable" class="table">
+								</table>
 							</div>
 						</div>
 					</div>

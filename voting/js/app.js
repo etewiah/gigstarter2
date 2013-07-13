@@ -1,5 +1,7 @@
 "use strict";
 
+window.gig.voteCount = 10;
+
 var renderTable = function () {
 	// contains both band and venue data
 	var tableData = {
@@ -32,6 +34,10 @@ var renderTable = function () {
 			if (venue.availability[date]) {
 				newVenue.available = true;
 				newVenue.bands = venue.bands[date];
+
+				if (window.gig.selectedBand.availability[date]) {
+					newVenue.votes = window.gig.selectedBand.venueVotes[date][venue.name] || 0;
+				}
 			}
 
 			newDate.venues.push(newVenue);
@@ -46,6 +52,31 @@ var renderTable = function () {
 	var renderedHtml = Mustache.render($('#venuesTableTemplate').html(), tableData);
 
 	table.html(renderedHtml);
+
+	$('.vote').click(function () {
+		var $this = $(this);
+
+		if (window.gig.voteCount > 0) {
+			var cell = $this.closest('td');
+
+			var votes = cell.find('.votes');
+			votes.text(parseInt(votes.text(), 10) + 1);
+
+			window.gig.voteCount--;
+			$('#voteCount').text(window.gig.voteCount + " votes left");
+
+			if (window.gig.voteCount <= 0) {
+				var buyButton = $('<button class="btn btn-primary">Buy More Votes</button>');
+
+				buyButton.click(function () {
+					window.gig.voteCount += 10;
+					$('#voteCount').text(window.gig.voteCount + " votes left");
+				});
+
+				$('#voteCount').append(' ').append(buyButton);
+			}
+		}
+	});
 };
 
 $(document).ready(function () {
@@ -58,9 +89,11 @@ $(document).ready(function () {
 		window.gig.selectedBandIndex = $('#bandsList button').index($this);
 		window.gig.selectedBand = window.gig.bands[window.gig.selectedBandIndex];
 
+		$('#bandsList button').removeClass('active').eq(window.gig.selectedBandIndex).addClass('active');
+
 		renderTable();
 
 		// TODO: clip
-		$('#venuesTitle').text('Schedule for ' + window.gig.selectedBand.name);
+		$('#venuesTitle').text('2. Vote for ' + window.gig.selectedBand.name);
 	}).first().click();
 });

@@ -21,14 +21,14 @@ html, body {
 
 	top: 0;
 	bottom: 0;
-	left: 0;
-	right: 35%;
+	left: 35%;
+	right: 0;
 }
 
 #venuesScrollContainer {
 	position: absolute;
 
-	top: 50px;
+	top: 36px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -40,20 +40,15 @@ html, body {
 
 	top: 0;
 	bottom: 0;
-	left: 66%;
-	right: 0;
+	left: 0;
+	right: 66%;
 }
 
-#bandsContainer .btn {
-	width: 100%;
-
-	text-align: left;
-}
 
 #bandsScrollContainer {
 	position: absolute;
 
-	top: 50px;
+	top: 36px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -62,10 +57,50 @@ html, body {
 }
 
 #venuesTable .notAvailable {
-	color: #333;
-	background-color: #bbb;
+/*	color: #bbb;
+	background-color: #333;*/
 }
 
 #venuesTable .bandUnavailable {
 	opacity: 0.2;
+}
+
+.vote {
+	color: #fff;
+	opacity: 0.3;
+	cursor: pointer;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+td:hover .vote {
+	opacity: 0.8;
+}
+
+#voteCount {
+	display: inline;
+	position: relative;
+	left: 20px;
+	top: 10px;
+	float: left;
+}
+
+.button {
+	display: block;
+	width: 100%;
+
+	text-align: left;
+}
+
+.button.active {
+	background-color: #DE5E60;
+	color: #FFFFFF;
+}	
+
+.button + .button {
+	margin-left: 0px;
 }
